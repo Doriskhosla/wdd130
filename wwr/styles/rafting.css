@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #1b4965;
-    --secondary-color: #f4a261;
-    --accent1-color: #bee9e8;
-    --accent2-color: #e9c46a;
+    --primary-color: #0b3d91;
+    --secondary-color: #1e90ff;
+    --accent1-color: #ffd166;
+    --accent2-color: #06d6a0;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -24,7 +24,7 @@ header .logo {
 /* Body */
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 /* Layout width */
@@ -51,16 +51,8 @@ article {
     padding: 8px;
 }
 
-/* Navigation */
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-nav a {
+*/ SOCIAL MEDIA LINKS */ .socialmedia a {
     text-decoration: none;
-    color: var(--primary-color);
 }
 
 /* Hero */
@@ -81,7 +73,7 @@ nav a {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: var(--accent1-color);
     color: black;
 }
@@ -92,7 +84,7 @@ nav a {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(27, 73, 101, 0.8);
 }
 
 /* Article Image */
@@ -102,30 +94,10 @@ nav a {
     margin-left: 10px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-}
-
-/* Socia Media icons */
-.socialmedia img {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.socialmedia a img {
-    width: 30px;
-    /*adjust to smaller size: 20px, 25px, 30px */
-    height: auto;
-    /* keep aspect ratio */
-    display: block;
-    /* ensures width is applied */
-
-}
-
-.socialmedia a {
-    text-decoration: none;
-    /* remove underline */
+/* FOOTER SOCIAL MEDIA ICONS */
+footer .socialmedia img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5px;
+    vertical-align: middle;
 }
