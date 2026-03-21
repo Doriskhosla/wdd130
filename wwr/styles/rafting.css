@@ -101,3 +101,9 @@ footer .socialmedia img {
     margin: 0.5px;
     vertical-align: middle;
 }
+
+/* NAVIGATION LINKS */
+header nav {
+    display: flex;
+    gap: 20px;
+}
