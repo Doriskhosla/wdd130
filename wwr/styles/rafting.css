@@ -13,11 +13,41 @@
     box-sizing: border-box;
 }
 
-/* Center the logo */
-header .logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 200px;
+/*  HEADER GRID LAYOUT Center the logo */
+header {
+    display: grid;
+    /* horizontal layout */
+    grid-template-columns: 150px 1fr;
+    /* 150px for logo, rest for nav */
+    align-items: center;
+    /* vertical alignment */
+    padding: 16px 0;
+}
+
+/* LOGO */
+header img {
+    width: 120px;
+    /* logo size */
+    height: auto;
+    /* maintain aspect ratio */
+}
+
+/* NAVIGATION FLEX */
+header nav {
+    display: flex;
+    /* horizontal layout for links */
+    justify-content: flex-end;
+    /* move links to the rigth */
+    gap: 16px;
+    /*sapcing between links */
+
+}
+
+header nav a {
+    text-decoration: none;
+    /* remove underline */
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 /* Body */
