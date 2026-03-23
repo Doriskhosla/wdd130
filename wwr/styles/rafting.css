@@ -94,11 +94,29 @@ header nav a {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    /* optional styling */
 }
 
+/*article heading */
 .adventure-heading {
     color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*Article image */
+.adventure-image {
+    width: 525px;
+    height: auto;
+}
+
+/*Client section*/
+.client-heading {
+    color: orangered;
+}
+
+.client-image {
+    width: 100px;
+    height: auto;
 }
 
 /* Body */
