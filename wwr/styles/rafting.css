@@ -111,8 +111,7 @@ header nav a {
 
 /*Client section*/
 .client-heading {
-    color: orangered;
-    var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .client-image {
