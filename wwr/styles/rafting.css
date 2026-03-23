@@ -97,6 +97,10 @@ header nav a {
     /* optional styling */
 }
 
+.adventure-heading {
+    color: black;
+}
+
 /* Body */
 body {
     font-family: var(--body-font);
