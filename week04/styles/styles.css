@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: #fff;
+    --heading-font: Lato, arial, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid
+}
