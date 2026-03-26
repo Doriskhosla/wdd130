@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0b3d91;
     --secondary-color: #1e90ff;
-    --accent1-color: #94d2bd;
+    --accent1-color: orange(0, 0, 0, 0.13);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -123,6 +123,12 @@ header nav a {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+/*Navigation Styles*/
+nav img {
+    width: 50px;
+    height: auto;
 }
 
 /* Layout width */
