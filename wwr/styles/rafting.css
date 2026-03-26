@@ -1,7 +1,10 @@
 :root {
     --primary-color: #0b3d91;
+    /* strong blue */
     --secondary-color: #1e90ff;
-    --accent1-color: orange(0, 0, 0, 0.13);
+    /*Lighter blue */
+    --accent1-color: rgba(0, 0, 0, 0.13);
+    /* Light overlay */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -16,38 +19,30 @@
 /*  HEADER GRID LAYOUT Center the logo */
 header {
     display: grid;
-    /* horizontal layout */
-    grid-template-columns: 150px 1fr;
-    /* 150px for logo, rest for nav */
+    grid-template-columns: auto 1fr;
     align-items: center;
-    /* vertical alignment */
-    padding: 16px 0;
+    padding: 10px 20px;
+    background-color: #f0f8ff
 }
 
 /* LOGO */
 header img {
     width: 120px;
-    /* logo size */
     height: auto;
-    /* maintain aspect ratio */
 }
 
 /* NAVIGATION FLEX */
 header nav {
     display: flex;
-    /* horizontal layout for links */
     justify-content: flex-end;
-    /* move links to the rigth */
-    gap: 16px;
-    /*sapcing between links */
+    gap: 20px;
 
 }
 
 header nav a {
     text-decoration: none;
-    /* remove underline */
     color: var(--primary-color);
-    font-weight: bold;
+    font-weight: bold
 }
 
 /* Header layout */
@@ -63,7 +58,7 @@ header {
 }
 
 /* Logo styling */
-header img {
+.logo {
     width: 120px;
     height: auto;
 }
@@ -122,7 +117,7 @@ header nav a {
 /* Body */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #222;
 }
 
 /*Navigation Styles*/
@@ -155,7 +150,8 @@ article {
     padding: 8px;
 }
 
-*/ SOCIAL MEDIA LINKS */ .socialmedia a {
+/* SOCIAL MEDIA LINKS */
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -177,8 +173,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
+    background-color: rgba(0, 0, 0, 0.13);
     color: black;
 }
 
@@ -199,15 +194,14 @@ article {
 }
 
 /* FOOTER SOCIAL MEDIA ICONS */
-footer .socialmedia img {
-    width: 50px;
-    height: 50px;
-    margin: 0.5px;
-    vertical-align: middle;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-/* NAVIGATION LINKS */
-header nav {
+.socialmedia {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
