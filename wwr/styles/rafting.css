@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: #597959;
     /* forest green */
     --secondary--color: #f4a261;
     /*warm sand*/
@@ -50,6 +50,11 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
 }
 
 .hero {
