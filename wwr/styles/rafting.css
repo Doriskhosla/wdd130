@@ -1,8 +1,6 @@
 :root {
     --primary-color: #597959;
     /* forest green */
-    --secondary--color: #f4a261;
-    /*warm sand*/
     --accent1-color: #264653;
     /*dark slate blue*/
     --accent2-color: #e9c46a;
@@ -65,8 +63,26 @@ article {
     padding: 8px;
 }
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 8px;
+}
+
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
 }
 
 .hero {
@@ -99,11 +115,11 @@ h1 {
 .adventure-gallery {
     display: flex;
     /* puts figures in a horizontal row */
-    justify-content: space-between;
+    justify-content: center;
     /* even space between images */
-    align-items: flex-start;
+    align-items: stretch;
     /* aligns all figures at top */
-    gap: 10px;
+    gap: 8px;
     /* optional spacing betteen images */
     /*spacing between images*/
     padding: 20px 0;
@@ -121,12 +137,9 @@ h1 {
 
 /* All adventure images - uniform size */
 .adventure-gallery img.adventure-img {
-    width: 120px !important;
-    /*force width */
-    height: auto !important;
-    /* keep aspect ratio */
-    max-width: 100%;
-    /* never overflow container */
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
     border-radius: 6px;
 }
 
@@ -137,7 +150,14 @@ h1 {
     font-weight: bold;
 }
 
+nav img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+}
+
 nav a {
+
     text-decoration: none;
     color: black;
     font-weight: bold;
