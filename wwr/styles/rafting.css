@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #597959;
+    --primary-color: #b1c4b1;
     /* forest green */
     --accent1-color: #264653;
     /*dark slate blue*/
     --accent2-color: #e9c46a;
+
     /*light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: "poppins, sans-serif";
@@ -61,6 +62,12 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+article {
+    position: absolute;
+    top: 150px;
+    background-color: #b4a274;
 }
 
 footer {
