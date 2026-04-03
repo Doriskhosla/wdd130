@@ -193,3 +193,38 @@ nav a {
     width: 100px;
     height: auto
 }
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.employees {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employees figure {
+    text-align: center;
+    max-width: 200px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005fa3;
+}
