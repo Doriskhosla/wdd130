@@ -200,31 +200,144 @@ nav a {
     border: none;
 }
 
-.employees {
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background-color: #b8a9d6;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border: 2px solid #555;
 }
 
-.employees figure {
+.logo {
+    width: 120;
+    height: 80px;
+    background: #ddd;
+}
+
+.nav a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #444;
+    text-decoration: none;
+    color: black;
+    background: #eee;
+}
+
+/* COMPANY INFO */
+.company-info {
     text-align: center;
-    max-width: 200px;
+    margin: 20px 0;
 }
 
-.contact-form form {
+.company-info h1 {
+    margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* MAP */
+.map {
+    width: 350px;
+    height: 250px;
+    background: #ccc;
+}
+
+/* FORM */
+.contact-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 300px;
 }
 
-.contact-form button {
-    background-color: #0077cc;
-    color: white;
+.contact-form {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #666;
+}
+
+.radio-group label {
+    display: block;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+button {
     padding: 10px;
-    border: none;
+    background: #ddd;
+    border: 1px solid #444;
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #005fa3;
+/*TEAM SECTION*/
+.team {
+    border: 2px solid #555;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.team members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.member {
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    margin: auto;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #b8a9d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-top: 2px solid #555;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
 }
