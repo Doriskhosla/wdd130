@@ -49,32 +49,6 @@ h2 {
     color: var(--primary-color);
 }
 
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
-.history-content img {
-    width: 200px;
-    height: auto;
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-article {
-    position: absolute;
-    top: 150px;
-    background-color: #afa17d;
-}
-
 footer {
     display: flex;
     justify-content: flex-end;
@@ -97,107 +71,9 @@ footer {
     display: block;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-
-}
-
-.hero h1 {
-    position: absolute;
-    font-size: 2em;
-    top: 20px;
-    left: 0px;
-    right: 20px;
-    margin: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: #998248;
-    color: black;
-}
-
-.hero article {
-    position: absolute;
-
-}
-
-.hero article img {
-    float: right;
-    width: 200px;
-    border: 5px solid var(--accent2-color);
-    border-radius: 50%;
-    margin-left: 10px;
-
-}
-
-.adventure-gallery {
-    display: flex;
-    /* puts figures in a horizontal row */
-    justify-content: center;
-    /* even space between images */
-    align-items: stretch;
-    /* aligns all figures at top */
-    gap: 8px;
-    /* optional spacing betteen images */
-    /*spacing between images*/
-    padding: 20px 0;
-    flex-wrap: wrap;
-    /*wraps to next line on smaller screens */
-}
-
-/* make sure the figures don't take full width */
-.adventure-gallery figure {
-    flex: 0 0 auto;
-    /* don't stretch, use natural size */
-    /* equal space for each figure */
-    text-align: center;
-}
-
-/* All adventure images - uniform size */
-.adventure-gallery img.adventure-img {
-    width: 90px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-/* Captions under each image */
-.adventure-gallery figcaption {
-    margin-top: 6px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-nav img {
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-}
-
-nav a {
-
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-
-}
-
-.logo {
+header img {
     width: 100px;
     height: auto
-}
-
-.contact-info iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
 }
 
 /* RESET */
@@ -216,12 +92,6 @@ nav a {
     align-items: center;
     padding: 20px 40px;
     border: 2px solid #555;
-}
-
-.logo {
-    width: 120;
-    height: 80px;
-    background: #ddd;
 }
 
 .nav a {
@@ -258,6 +128,23 @@ nav a {
     background: #ccc;
 }
 
+.contact-main {
+    display: flex;
+    gap: 20px;
+    /*space between columns*/
+    justify-content: center;
+    align-items: flex-start;
+    flex: wrap;
+}
+
+.contact-main iframe,
+.contact-main form {
+    flex: 1;
+    /*equal width*/
+    max-width: 400px;
+    /*limit max width*/
+}
+
 /* FORM */
 .contact-form {
     display: flex;
@@ -274,6 +161,99 @@ nav a {
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #666;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    /*needed for absolute positioning of h1*/
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    /* sits on top of image */
+    top: 10%;
+    /* move it higher -smaller % = higher up */
+    left: 25%;
+    /* horizontal placement */
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0, 7);
+    /* optional, makes text more readable */
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* GRID LAYOUT */
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.grid-item img {
+    width: 60%;
+}
+
+.trips {
+    display: grid;
+    /* IMPORTANT */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip img {
+    width: 60%;
+    height: auto;
+}
+
+.trip {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    padding: 1rem;
+    background-color: #5f6e75;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.newsletter input,
+.newsletter button {
+    margin: 10px 0;
+    padding: 10px;
 }
 
 .radio-group label {
@@ -297,21 +277,33 @@ button {
 }
 
 /*TEAM SECTION*/
-.team {
+.employees {
     border: 2px solid #555;
     margin: 20px;
     padding: 20px;
-    text-align: center;
 }
 
-.team members {
+.employees {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.member {
+.employees figure {
+    flex: 1;
     text-align: center;
+}
+
+.employees {
+    display: flex;
+    gap: 20px;
+
+}
+
+.employees img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
 }
 
 .avatar {

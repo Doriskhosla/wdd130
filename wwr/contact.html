@@ -15,12 +15,15 @@
 
     <!--HEADER-->
     <header class="site-header">
-        <img src="images/rapidslogo.jpg" alt="Rafting Company Logo" class="Logo">
-        <nav class="nav-menu">
+        <div class="logo">
+            <img src="images/rapidslogo.jpg" alt="Rafting Company Logo" class="Logo">
+        </div>
+        <nav class="site nav">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
+
         </nav>
     </header>
 
@@ -34,13 +37,17 @@
     </section>
 
     <!--CONTACT SECTION-->
-    <section class="contact-container">
-        <!--MAP-->
-        <div class="map"></div>
+    <main class="contact-main">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3747.352290329854!2d-100.82827091231619!3d20.07755511795465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1775197110031!5m2!1sen!2sus"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
 
         <!--FORM-->
         <form class="contact-form">
-            <label>name</label>
+            <label>Name</label>
             <input type="text" placeholder="Placeholder">
 
             <label>"Email</label>
@@ -62,55 +69,31 @@
 
             <button type="submit">Get in Touch!</button>
         </form>
-    </section>
+    </main>
 
-
-    <!--TEAM SECTION-->
-    <section class="team">
-        <h2>We Are Here to Serve You</h2>
-        <div class="team-members">
-            <div class="member">
-                <div class="avatar"></div>
-                <p>Employee Profile</p>
-            </div>
-            <div class="member">
-                <div class="avatar"></div>
-                <p>Employee Profile</p>
-            </div>
-            <div class="member">
-                <div class="avatar"></div>
-                <p>Employee Profile</p>
-            </div>
-        </div>
-    </section>
-
-
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3747.352290329854!2d-100.82827091231619!3d20.07755511795465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1775197110031!5m2!1sen!2sus"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
 
     <!--Employee Profiles-->
-    <class="employees">
-        <h2>Meet Our Team</h2>
+    <h2>Meet Our Team</h2>
+    <section class="employees">
 
         <figure>
-            <img src="images/employee1.jpg" alt="Robert Huntington - River Guide">
-            <figcaption> Robert Huntington - Led River Guide</figcaption>
+            <img src="images/employee1.jpg" alt=" Employee 1 - River Guide">
+            <figcaption> Robert Huntington - Operation Manager</figcaption>
         </figure>
 
         <figure>
-            <img src="image/employee2.jpg" alt="Luis David - Manager">
-            <figcaption>Luis David - Operations Manager</figcaption>
+            <img src="images/employee2.jpg" alt=" Employee 2 - Manager">
+            <figcaption>Luis David - Whitewater Guide </figcaption>
         </figure>
 
         <figure>
-            <img src="image/employee3.jpg" alt="Mary Cazier- Instructor">
-            <figcaption>Mary Cazier- Safety Instructor</figcaption>
+            <img src="images/employee3.jpg" alt=" Mary Cierra 3- Instructor">
+            <figcaption>Mary Cierra- Safety Instructor</figcaption>
         </figure>
+    </section>
 
 
+    <footer>
         <p>&copy; 2026 White Water Rafting Co. | Maria D. Khosla</p>
 
 
@@ -125,6 +108,5 @@
                 <img src="images/instagram.png" width="50" height="50" alt="Instagram Icon">
             </a>
         </nav>
-        </footer>
-
+    </footer>
 </body>
