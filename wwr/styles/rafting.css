@@ -129,8 +129,8 @@ header img {
 
 /* MAP */
 .map {
-    width: 350px;
-    height: 250px;
+    width: 100px;
+    height: auto;
     background: #7a7575;
 }
 
@@ -144,7 +144,7 @@ header img {
 .contact-main form {
     flex: 1;
     max-width: 600px;
-    height: 450;
+    height: 450px;
 }
 
 /* FORM */
@@ -154,6 +154,13 @@ header img {
     width: 300px;
     margin-top: 10px;
 
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*3 columns */
+    gap: 10px;
 }
 
 .contact-form input,
