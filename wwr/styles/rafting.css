@@ -244,6 +244,20 @@ header img {
     border-radius: 8px;
 }
 
+*/ERROR*/ .error-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.error-page a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #302d2d;
+    text-decoration: none;
+    color: rgb(233, 189, 189);
+}
+
 /* NEWSLETTER */
 .newsletter {
     padding: 1rem;
