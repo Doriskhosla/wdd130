@@ -54,14 +54,20 @@ h2 {
 }
 
 .adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 10px;
+    /*space between images */
+    justify-content: center;
+    /* centers te images */
 }
 
 .adventure-gallery img {
-    width: 100%;
+    width: 120px;
+    /*make them small */
     height: auto;
+    /* keep proportions */
+    border-radius: 5px;
+    /* optional, looks nicer */
 }
 
 footer {
@@ -191,6 +197,11 @@ header img {
 .hero-content img {
     width: 200px;
     height: auto;
+    border: 4px solid #333;
+    padding-left: 20px;
+    /*pushes image inside the border */
+    border-radius: 8px;
+
 }
 
 /* HISTORY LAYOUT */
@@ -208,11 +219,19 @@ header img {
 
 .hero article img {
     width: 300px;
+    border: 3px solid #333;
+    /*dark gray border */
+    border-radius: 8px;
+    /*slightly rounded corners */
 }
 
 .history-content img {
     width: 250px;
     height: auto;
+    border: 3px solid #333;
+    /*dark gray border */
+    border-radius: 8px;
+    /*slightly rounded corners */
 }
 
 /* HERO */
